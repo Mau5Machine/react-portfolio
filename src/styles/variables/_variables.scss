@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Montserrat|Open+Sans|Raleway|Ubuntu|VT323');
+/* Colors --------------------------------- */
+
+/* Theme Colors ------------- */
+$color__theme-grey: #7D7D7B;
+$color__theme-orange: #e67f0d;
+$color__theme-black: #040404;
+$color__theme-green: #00a6a6;
+$color__theme-rose: #e71d36;
+$color__theme-violet: #2a1e5c;
+$color__theme-saffron: #f39237;
+$color__theme-cyan: #507dbc;
+$color__theme-violet2: #4c2a85;
+/* Theme Shades ------------- */
+// Dark
+$color__grey-dark: darken($color__theme-grey, 20%);
+$color__orange-dark: darken($color__theme-orange, 20%);
+$color__green-dark: darken($color__theme-green, 10%);
+$color__rose-dark: darken($color__theme-rose, 20%);
+// Light
+$color__grey-light: lighten($color__theme-grey, 20%);
+$color__orange-light: lighten($color__theme-orange, 20%);
+$color__green-light: lighten($color__theme-green, 20%);
+$color__rose-light: lighten($color__theme-rose, 20%);
+
+/* Common Globals -------------------------- */
+$color__off-white: #fafafa;
+$color__pink: #ef476f;
+$color__blue: #004fff;
+
+
+/* Fonts ----------------------------------------------- */
+$font__kanit: 'Kanit',
+sans-serif;
+$font__open-sans: 'Open Sans',
+sans-serif;
+$font__raleway: 'Raleway',
+sans-serif;
+$font__montserrat: 'Montserrat',
+sans-serif;
+$font__ubuntu: 'Ubuntu',
+sans-serif;
+$font__digital: 'VT323',
+monospace;
+
+/* Spacing ------------------------------------------------- */
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.6rem;
+// Letter Spacing
+$ls: .3rem;
+
+/* Responsive Width ----------------------------------------- */
+$mobile_width: 600px;
+$tablet_width: 768px;
+$desktop_width: 1168px;
+$wide_width: 1379px;

@@ -1,0 +1,35 @@
+.intro {
+    background-color: white;
+}
+
+.afk__intro {
+    text-transform: uppercase;
+
+    .end-word {
+        font-size: 2rem;
+        font-weight: 700;
+        position: relative;
+        bottom: 2rem;
+        letter-spacing: $ls;
+
+        @include media(desktop) {
+            font-size: 3rem;
+        }
+    }
+
+    .letter__definition {
+
+        img {
+            width: 7rem;
+        }
+    }
+
+    .letter__description {
+        p {
+            font-family: $font__kanit;
+            letter-spacing: .2rem;
+            padding-top: 2rem;
+            line-height: 1.7rem;
+        }
+    }
+}

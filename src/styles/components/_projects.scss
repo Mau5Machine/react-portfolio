@@ -1,0 +1,45 @@
+.projects__header {
+    min-height: 20rem;
+    background: url('http://afkdeveloper.com/hosted-images/desk.jpg');
+    background-position: 90% 110%;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+
+    @include media(mobile) {
+        min-height: 30rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        position: relative;
+        top: -3rem;
+        left: 2rem;
+        text-shadow: 0 1px 0 #ccc,
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0, 0, 0, .1),
+            0 0 5px rgba(0, 0, 0, .1),
+            0 1px 3px rgba(0, 0, 0, .3);
+
+        @include media(mobile) {
+            font-size: 5.3rem;
+            top: 3rem;
+        }
+    }
+
+    .tiles-grid {
+        grid-template-columns: 100% !important;
+    }
+}
+
+.projects__tiles {
+    margin-left: 2rem;
+
+    @include media(tablet) {
+        margin-left: 0;
+    }
+}

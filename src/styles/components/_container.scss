@@ -1,0 +1,21 @@
+.container {
+    max-width: 100%;
+
+    @include media(tablet) {
+        max-width: 80rem;
+    }
+
+    margin: 0 auto;
+    padding: 0 $m-size;
+}
+
+.container__large {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $m-size;
+
+    @include media(tablet) {
+        max-width: 120rem;
+    }
+
+}

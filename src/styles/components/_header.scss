@@ -1,0 +1,114 @@
+.header__title {
+    text-transform: uppercase;
+
+    #professional {
+        margin-top: 0;
+        padding-top: 4rem;
+        letter-spacing: .3rem;
+        @include shadowText($color__off-white, 4rem);
+        text-align: center;
+
+        @include media(mobile) {
+            font-size: 6rem;
+        }
+
+        @include media(desktop) {
+            font-size: 8rem;
+        }
+    }
+
+    #web-services {
+        @include shadowText($color__off-white, 3rem);
+        text-align: center;
+        letter-spacing: .7rem;
+        position: relative;
+        top: -18rem;
+
+        @include media(mobile) {
+            font-size: 5rem;
+        }
+    }
+}
+
+header {
+    position: relative;
+    height: 37rem;
+    overflow: hidden;
+    z-index: 99;
+
+    @include media(mobile) {
+        height: 40rem;
+    }
+
+    @include media(tablet) {
+        height: 45rem;
+    }
+
+    @include media(desktop) {
+        height: 50rem;
+    }
+}
+
+.header__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+
+.header__title p,
+.header__title span {
+    margin: 0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.header__title p {
+    position: relative;
+    color: white;
+}
+
+.header__services {
+    position: relative;
+    top: -24rem;
+
+    #by {
+        text-align: center;
+        position: relative;
+        top: -2rem;
+        text-transform: uppercase;
+        @include shadowText($color__off-white, 3rem);
+    }
+
+    .signature {
+        position: relative;
+        transform: rotate(-6deg);
+
+        @include media(mobile) {
+            top: -4.5rem;
+            left: 4rem;
+        }
+
+        @include media(tablet) {
+            left: 10rem;
+        }
+
+        @include media(desktop) {
+            left: 20rem;
+        }
+
+        img {
+            width: 300px;
+
+            @include media(mobile) {
+                width: 40rem;
+            }
+        }
+    }
+}

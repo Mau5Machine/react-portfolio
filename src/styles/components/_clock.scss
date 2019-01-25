@@ -1,0 +1,11 @@
+.clock {}
+
+.clock__time {
+    letter-spacing: $ls;
+    font-size: 5rem;
+    background-color: $color__theme-black;
+    color: $color__theme-rose;
+    border: 2px solid $color__theme-violet;
+    font-family: $font__digital;
+    border-radius: 10px;
+}

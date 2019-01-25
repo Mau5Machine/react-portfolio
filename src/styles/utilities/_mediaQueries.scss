@@ -1,0 +1,30 @@
+@mixin media($res) {
+
+    // $mobile_width: 600px;
+    @if mobile==$res {
+        @media only screen and (min-width: $mobile_width) {
+            @content;
+        }
+    }
+
+    // $tablet_width: 768px;
+    @if tablet==$res {
+        @media only screen and (min-width: $tablet_width) {
+            @content;
+        }
+    }
+
+    // $desktop_width: 1168px;
+    @if desktop==$res {
+        @media only screen and (min-width: $desktop_width) {
+            @content;
+        }
+    }
+
+    // $wide_width: 1379px;
+    @if wide==$res {
+        @media only screen and (min-width: $wide_width) {
+            @content;
+        }
+    }
+}

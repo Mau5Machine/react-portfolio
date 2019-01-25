@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    // width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font__ubuntu;
+}
+
+a,
+p {
+    font-size: $m-size;
+    text-decoration: none;
+}
+
+a {
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-family: $font__kanit;
+    font-size: $xl-size;
+}

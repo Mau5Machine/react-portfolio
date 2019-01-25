@@ -1,0 +1,61 @@
+.contact {
+    margin-top: 10rem;
+}
+
+#contact-form {
+    margin-top: 10rem;
+}
+
+.contact__header {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    color: $color__theme-violet;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3);
+
+    @include media(mobile) {
+        font-size: 5.3rem;
+        top: 3rem;
+    }
+
+}
+
+.social__row {
+    text-align: center;
+
+    img {
+        margin: 0 auto;
+        text-align: center;
+        width: 5rem;
+        margin: 0 2rem;
+    }
+}
+
+.contact__card {
+    .card-title {
+        text-transform: uppercase;
+    }
+
+    .card-content {
+        a {
+            color: $color__theme-black;
+        }
+
+        i {
+            font-size: 3rem;
+        }
+
+        .email {
+            padding-left: 2rem;
+            position: relative;
+            top: -.5rem;
+        }
+    }
+}
