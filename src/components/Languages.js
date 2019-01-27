@@ -10,9 +10,10 @@ const Languages = (props) => {
 
                 <div className="row skill__row">
 
-                    <div className="skill__icon col s5 m3 l2">
+                    <div className="skill__icon col s5 offset-s2 m3 l2">
                         <div data-type="fill"
-                            data-img="http://konpa.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" data-img-size="80, 80"
+                            data-img="http://konpa.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg"
+                            data-img-size="60, 60"
                             data-fill-dir="ltr"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -22,7 +23,8 @@ const Languages = (props) => {
 
                     <div className="skill__icon  col s5 m3 l2">
                         <div data-type="fill"
-                            data-img="http://konpa.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" data-img-size="80, 80"
+                            data-img="http://konpa.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg"
+                            data-img-size="60, 60"
                             data-fill-dir="ltr"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -30,10 +32,10 @@ const Languages = (props) => {
                         </div>
                     </div>
 
-                    <div className="skill__icon  col s5 m3 l2">
+                    <div className="skill__icon  col s5 offset-s2 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="ltr"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -44,7 +46,7 @@ const Languages = (props) => {
                     <div className="skill__icon  col s5 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/jquery/jquery-original-wordmark.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="ltr"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -55,7 +57,7 @@ const Languages = (props) => {
                     <div className="skill__icon  col s5 offset-s4 m4 offset-m5 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/nodejs/nodejs-original.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="ltr"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -65,10 +67,10 @@ const Languages = (props) => {
                 </div>
 
                 <div className="row skill__row">
-                    <div className="skill__icon  col s5 m3 l2">
+                    <div className="skill__icon  col s5 offset-s2 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/php/php-original.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="rtl"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -79,7 +81,7 @@ const Languages = (props) => {
                     <div className="skill__icon  col s5 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="rtl"
                             data-fill-background-extrude="0"
                             data-background="grey"
@@ -88,10 +90,10 @@ const Languages = (props) => {
                         </div>
                     </div>
 
-                    <div className="skill__icon  col s5 m3 l2">
+                    <div className="skill__icon  col s5 offset-s2 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="rtl"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -102,7 +104,7 @@ const Languages = (props) => {
                     <div className="skill__icon  col s5 m3 l2">
                         <div data-type="fill"
                             data-img="http://konpa.github.io/devicon/devicon.git/icons/sass/sass-original.svg"
-                            data-img-size="80, 80"
+                            data-img-size="60, 60"
                             data-fill-dir="rtl"
                             data-fill-background-extrude="0"
                             data-fill-background="white"
@@ -112,7 +114,7 @@ const Languages = (props) => {
 
                     <div className="skill__icon  col s5 offset-s4 m4 offset-m5 l2">
                         <div data-type="fill"
-                            data-img="http://konpa.github.io/devicon/devicon.git/icons/wordpress/wordpress-original.svg"
+                            data-img="images/wp.svg"
                             data-img-size="80,80"
                             data-fill-dir="rtl"
                             data-fill-background-extrude="0"

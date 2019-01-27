@@ -1,11 +1,14 @@
 .clock {}
 
 .clock__time {
+    font-size: 4rem;
+    font-weight: 700;
     letter-spacing: $ls;
-    font-size: 5rem;
-    background-color: $color__theme-black;
-    color: $color__theme-rose;
-    border: 2px solid $color__theme-violet;
-    font-family: $font__digital;
-    border-radius: 10px;
+    font-family: $font__clock;
+    color: $color__off-white;
+    @include shadowText2();
+
+    @include media(mobile) {
+        font-size: 5rem;
+    }
 }

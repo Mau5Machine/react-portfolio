@@ -94,33 +94,7 @@ $(document).ready(function () {
     /* Web ticker activation */
     $('#image__ticker').liMarquee();
 
-    /* Wire up the contact form with ajax here */
-    $("#submit").on("click", function () {
-        event.preventDefault();
-        var e = "name=" + $("#name").val() + "&email=" + $("#email").val() + "&msg=" + $("#message").val();
-        var a = "animated 1 zoomInUp",
-            s = "animated 1 fadeIn";
-        $.ajax({
-            url: "http://afkdeveloper.com/contact.php",
-            data: e,
-            type: "POST",
-            success: function () {
-                $("#contact-form").css("visibility", "hidden"),
-                    $(".contact-form").html("<h1 className='contact-success text-center'>Thank You for the message <br>I will get back to you as soon as possible!</h1>"),
-                    $(".contact-form").append("<img src='http://afkdeveloper.com/images/icons/success.png' class='row success-icon'>"),
-                    $(".contact-success").addClass(s),
-                    $(".success-icon").addClass(a)
-            },
-            error: function () {
-                $("#contact-form").css("visibility", "hidden"),
-                    $(".contact-form").html("<h1 className='contact-error text-center'>Sorry, there was an error. <br>Please try again later.</h1>"),
-                    $(".contact-form").append("<img src='http://afkdeveloper.com/images/icons/error.png' className='row error-icon'>"),
-                    $(".contact-error").addClass(s),
-                    $(".error-icon").addClass(a)
-            }
-        })
-    });
-
+    // Active the show on scroll effects here throughout the site
     ScrollReveal().reveal('#agile', {
         origin: 'right',
         delay: 400,
@@ -149,6 +123,15 @@ $(document).ready(function () {
     });
 
     ScrollReveal().reveal('.service__icon', {
+        origin: 'top',
+        delay: 400,
+        distance: '50px',
+        duration: 400,
+        easing: 'ease-in',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.skill__icon', {
         origin: 'top',
         delay: 400,
         distance: '50px',

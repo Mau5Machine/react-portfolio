@@ -29,14 +29,33 @@ const SideNav = () => {
             </a></li>
 
             <li className="social__row__nav row">
-                <a href="https://github.com/Mau5Machine" target="_blank" >
-                    <img src='http://konpa.github.io/devicon/devicon.git/icons/github/github-original-wordmark.svg' />
+                <a
+                    href="https://github.com/Mau5Machine"
+                    target="_blank"
+                    className="col s2"
+                >
+                    <i className="fab fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/christian.martins.906" target="_blank" >
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ei-sc-facebook.svg/2000px-Ei-sc-facebook.svg.png' />
+                <a
+                    href="https://www.facebook.com/christian.martins.906"
+                    target="_blank"
+                    className="col s2"
+                >
+                    <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/christianz_world/" target="_blank" >
-                    <img src='https://image.flaticon.com/icons/svg/54/54040.svg' />
+                <a
+                    href="https://www.instagram.com/christianz_world/"
+                    target="_blank"
+                    className="col s2"
+                >
+                    <i className="fab fa-instagram"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/christian-martins-65b393a9/"
+                    target="_blank"
+                    className="col s2"
+                >
+                    <i className="fab fa-linkedin"></i>
                 </a>
             </li>
         </ul>

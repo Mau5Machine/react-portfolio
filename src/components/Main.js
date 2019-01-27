@@ -12,30 +12,58 @@ import More from './More';
 import Parallax2 from './Parallax2';
 import Ticker from './Ticker';
 import Contact from './Contact';
-import OptionModal from './OptionModal';
+import SubmitModal from './SubmitModal';
 import Trigger from './Trigger';
 import Footer from './Footer';
 
-
 class Main extends React.Component {
     state = {
-        selectedOption: undefined,
-        skills: [
-            'hey',
-            'what',
-            'how'
-        ]
+        showModal: undefined,
+        modalMessage: '',
+        modalTitle: ''
     };
-    handleAlert = () => {
-        const randomNum = Math.floor(Math.random() * 20);
-        this.setState(() => ({
-            selectedOption: randomNum
-        }));
-        console.log(this.state.selectedOption)
+
+    handleSubmit = (name, email, msg) => {
+        event.preventDefault();
+
+        if (!name || !email || !msg) {
+            this.setState(() => ({
+                showModal: true,
+                modalMessage: 'Please fill out all the fields to submit form',
+                modalTitle: 'Empty Fields!'
+            }));
+            return true;
+        } else {
+            fetch('http://afkdeveloper.com/contact.php', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `name=${name}&email=${email}&msg=${msg}`,
+                mode: 'no-cors',
+            })
+                .then(() => {
+                    this.setState(() => ({
+                        showModal: true,
+                        modalTitle: 'Thank You!',
+                        modalMessage: 'I will contact you shortly!'
+                    }));
+
+                })
+                .catch((err) => {
+                    this.setState(() => ({
+                        showModal: true,
+                        modalTitle: 'Oops! There was an error',
+                        modalMessage: 'Something went wrong, please try again later or email me directly at <a href="mailto:christian@afkdeveloper.com">christian@afkdeveloper.com</a>'
+                    }));
+                    return true;
+                });
+        }
     };
+
     closeModal = () => {
         this.setState(() => ({
-            selectedOption: undefined
+            showModal: false
         }));
     };
 
@@ -66,12 +94,21 @@ class Main extends React.Component {
                 <div className="container__large">
                     <Parallax2 />
                 </div>
-                <div className="container">
-                    <Ticker />
-                </div>
-                <div className="container__large">
-
-                    <Contact />
+                <div className="bottom-half-body">
+                    <div className="container">
+                        <Ticker />
+                    </div>
+                    <div className="container__large">
+                        <SubmitModal
+                            showModal={this.state.showModal}
+                            closeModal={this.closeModal}
+                            modalTitle={this.state.modalTitle}
+                            modalMessage={this.state.modalMessage}
+                        />
+                        <Contact
+                            handleSubmit={this.handleSubmit}
+                        />
+                    </div>
                 </div>
                 <Footer />
             </div>

@@ -19,8 +19,7 @@
 }
 
 .react-modal {
-    background: $color__green-dark;
-    color: $color__off-white;
+    background: linear-gradient(45deg, rgba(125, 125, 123, 1) 0%, rgba(125, 125, 123, 1) 5%, rgba(80, 125, 188, 1) 35%, rgba(80, 125, 188, 1) 51%, rgba(80, 125, 188, 1) 57%, rgba(80, 125, 188, 1) 71%, rgba(125, 125, 123, 1) 94%, rgba(125, 125, 123, 1) 100%);
     max-width: 38rem;
     outline: none;
     padding: $l-size;
@@ -34,13 +33,19 @@
     letter-spacing: $ls;
     width: 100%;
     padding: 0 2rem;
-    font-size: $l-size;
-    font-family: $font__raleway;
+    font-size: 3rem;
+    color: $color__theme-black;
+    @include shadowText2();
+    font-family: $font__kanit;
     font-weight: 600;
 }
 
 .modal__body {
     letter-spacing: $ls;
     text-transform: uppercase;
-    word-break: break-all;
+    word-wrap: normal;
+    font-family: $font__raleway;
+    font-size: 1.2rem;
+    color: $color__off-white;
+    margin-bottom: 2rem;
 }

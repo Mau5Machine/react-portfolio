@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 
-const OptionModal = (props) => (
+const SubmitModal = (props) => (
 
     <Modal
-        isOpen={!!props.selectedOption}
+        isOpen={!!props.showModal}
         onRequestClose={props.closeModal}
-        contentLabel="Alert Modal"
+        contentLabel="Submit Modal"
         ariaHideApp={false}
         closeTimeoutMS={200}
         className="react-modal"
     >
-        <h2 className="modal__title">Alert Modal</h2>
-        <p className="modal__body">This is a React Modal</p>
-        <h2>{props.selectedOption}</h2>
+        <h2 className="modal__title">{props.modalTitle}</h2>
+        <p className="modal__body">{props.modalMessage}</p>
         <button
             onClick={props.closeModal}
-            className="btn lg"
+            className="btn lg btn-main"
         >Close Modal</button>
     </Modal>
 )
 
 
-export default OptionModal;
+export default SubmitModal;

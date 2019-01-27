@@ -1,16 +1,47 @@
+.input-field>label {
+    top: -1rem;
+    color: $color__theme-black;
+    font-size: 1.5rem;
+
+}
+
 .contact {
-    margin-top: 10rem;
+    margin-top: 5rem;
+}
+
+.contact__form {
+    background-color: $color__off-white;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $color__theme-grey;
+    box-shadow: 2px 2px 2px black;
+}
+
+.input-field .prefix {
+    color: $color__theme-black;
+    font-size: 2.5rem;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: $color__theme-cyan;
+}
+
+.input-field .prefix.active {
+    color: $color__theme-cyan;
+    font-size: 2.5rem;
 }
 
 #contact-form {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .contact__header {
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    color: $color__theme-violet;
+    color: $color__off-white;
     text-shadow: 0 1px 0 #ccc,
         0 2px 0 #c9c9c9,
         0 3px 0 #bbb,
@@ -30,15 +61,16 @@
 .social__row {
     text-align: center;
 
-    img {
-        margin: 0 auto;
-        text-align: center;
-        width: 5rem;
-        margin: 0 2rem;
+    i {
+        color: white;
+        font-size: 3rem;
+        padding: 0 1rem;
     }
 }
 
 .contact__card {
+    padding-bottom: 10rem;
+
     .card-title {
         text-transform: uppercase;
     }
@@ -56,6 +88,50 @@
             padding-left: 2rem;
             position: relative;
             top: -.5rem;
+        }
+    }
+}
+
+.submit__status {
+    margin: 0 auto;
+
+    .complete__text {
+        h1 {
+            @include shadowText2();
+            font-size: 3rem;
+
+            @include media(mobile) {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .complete__icon {
+        img {
+            width: 10rem;
+            margin: 0 auto;
+        }
+    }
+
+    .error__text {
+        h1 {
+            @include shadowText2();
+            font-size: 3rem;
+
+            @include media(mobile) {
+                font-size: 4rem;
+            }
+        }
+
+        a {
+            font-size: 2rem;
+        }
+    }
+
+    .error__icon {
+        i {
+            font-size: 10rem;
+            margin: 0 auto;
         }
     }
 }

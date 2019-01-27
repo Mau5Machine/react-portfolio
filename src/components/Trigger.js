@@ -4,7 +4,7 @@ const Trigger = (props) => {
     return (
         <div>
             <button
-                onClick={props.handleAlert}
+                onClick={props.handleSubmit}
                 className="btn waves-effect waves-light"
             >
                 Trigger Modal

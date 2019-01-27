@@ -1,11 +1,21 @@
 .footer {
     width: 100%;
-    margin-left: .4rem;
     min-height: 6rem;
     background-color: $color__theme-grey;
+    margin-top: -4rem;
+    padding: 4rem 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    @include media(tablet) {
+        padding: 2rem 0;
+    }
+
+    .row {
+        margin-right: 0;
+    }
 
     @include media(mobile) {
-        margin: 0 .4rem;
         min-height: 8rem;
 
     }
@@ -13,6 +23,12 @@
     margin-bottom: -10rem;
 
     .footer__content {
+        margin: 0 auto;
+
+        @include media(tablet) {
+            max-height: 6rem;
+            padding-bottom: 2rem;
+        }
 
         .copyright {
             text-align: center;

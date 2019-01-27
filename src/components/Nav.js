@@ -53,6 +53,10 @@ const Nav = () => {
                 <a href="https://www.instagram.com/christianz_world/" target="_blank">
                     <i className="fab fa-github"></i>
                 </a>
+
+                <a href="https://www.linkedin.com/in/christian-martins-65b393a9/" target="_blank">
+                    <i className="fab fa-linkedin"></i>
+                </a>
             </div>
         </nav>
     );

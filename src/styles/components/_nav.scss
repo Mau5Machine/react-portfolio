@@ -60,11 +60,14 @@ nav {
         margin-left: 2rem;
     }
 
-    .social__row__nav {
-        img {
-            margin-top: 2.5rem;
-            width: 4rem;
-        }
+    .social__row__nav a i {
+        padding: 0;
+        color: $color__off-white;
+        margin-top: 2.5rem;
+        margin-left: 0;
+        width: 4rem;
+        margin: 0;
+
     }
 
     li a {

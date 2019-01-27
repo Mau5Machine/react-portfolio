@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit|Montserrat|Open+Sans|Raleway|Ubuntu|VT323');
+@import url('https://fonts.googleapis.com/css?family=Kanit|Montserrat|Open+Sans|Raleway|Ubuntu|VT323|Cinzel');
 /* Colors --------------------------------- */
 
 /* Theme Colors ------------- */
@@ -42,6 +42,8 @@ $font__ubuntu: 'Ubuntu',
 sans-serif;
 $font__digital: 'VT323',
 monospace;
+$font__clock: 'Cinzel',
+serif;
 
 /* Spacing ------------------------------------------------- */
 $m-size: 1.6rem;
