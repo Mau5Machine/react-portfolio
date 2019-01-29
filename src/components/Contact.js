@@ -105,15 +105,15 @@ export default class Contact extends React.Component {
 
                 <div className="row">
                     <div className="col s12 m8 offset-m2  social__row">
-                        <a href="https://github.com/Mau5Machine" target="_blank">
+                        <a href="https://www.facebook.com/christian.martins.906" target="_blank">
                             <i className="fab fa-facebook-f"></i>
                         </a>
 
-                        <a href="https://www.facebook.com/christian.martins.906" target="_blank">
+                        <a href="https://www.instagram.com/christianz_world/" target="_blank">
                             <i className="fab fa-instagram"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/christianz_world/" target="_blank">
+                        <a href="https://github.com/Mau5Machine" target="_blank">
                             <i className="fab fa-github"></i>
                         </a>
 
