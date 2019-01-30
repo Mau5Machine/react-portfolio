@@ -41,23 +41,6 @@ const Nav = () => {
                 </ul>
 
             </div>
-            <div className="col s4 nav__social">
-                <a href="https://www.facebook.com/christian.martins.906" target="_blank">
-                    <i className="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="https://www.instagram.com/christianz_world/" target="_blank">
-                    <i className="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/Mau5Machine" target="_blank">
-                    <i className="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/christian-martins-65b393a9/" target="_blank">
-                    <i className="fab fa-linkedin"></i>
-                </a>
-            </div>
         </nav>
     );
 };

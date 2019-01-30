@@ -1,4 +1,13 @@
+$(window).on("load", function () {
+    var windows = $(window);
+    $(".loading").fadeOut(500);
+});
+
 $(document).ready(function () {
+    $(".cover-bg").each(function () {
+        var a = $(this).attr("data-image-src");
+        void 0 !== a && !1 !== a && $(this).css("background-image", "url(" + a + ")")
+    })
     M.AutoInit();
     $("#type").css("visibility", "hidden");
     $("#type").t({
