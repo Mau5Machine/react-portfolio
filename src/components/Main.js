@@ -1,32 +1,27 @@
 import React from 'react';
 import Header from './Header';
 import Nav from './Nav';
-import SideNav from './SideNav';
-import Motto from './Motto';
-import TopBtn from './TopBtn';
-import Attributes from './Attributes';
-import Languages from './Languages';
-import Parallax from './Parallax';
+import About from './About';
+import Services from './Services';
 import Projects from './Projects';
-import More from './More';
-import Parallax2 from './Parallax2';
-import Ticker from './Ticker';
+import Details from './Details';
+import Testimonials from './Testimonials';
 import Contact from './Contact';
 import SubmitModal from './SubmitModal';
-import Trigger from './Trigger';
 import Footer from './Footer';
 
 class Main extends React.Component {
     state = {
         showModal: undefined,
         modalMessage: '',
-        modalTitle: ''
+        modalTitle: '',
+        currentStatus: 'available'
     };
 
-    handleSubmit = (name, email, msg) => {
+    handleSubmit = (name, email, subject, msg) => {
         event.preventDefault();
 
-        if (!name || !email || !msg) {
+        if (!name || !email || !subject || !msg) {
             this.setState(() => ({
                 showModal: true,
                 modalMessage: 'Please fill out all the fields to submit form',
@@ -39,7 +34,7 @@ class Main extends React.Component {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: `name=${name}&email=${email}&msg=${msg}`,
+                body: `name=${name}&email=${email}&subject=${subject}&msg=${msg}`,
                 mode: 'no-cors',
             })
                 .then(() => {
@@ -73,43 +68,22 @@ class Main extends React.Component {
         return (
             <div>
                 <Nav />
-                <SideNav />
                 <Header />
-                <div className="container__large">
-                    <TopBtn />
-                    <Motto />
-                </div>
-                <div className="container">
-                    <Attributes />
-                </div>
-                <div className="container__large">
-                    <Parallax />
-                    <Languages />
-                </div>
-
-                <div className="container">
-                    <Projects />
-                    <More />
-                </div>
-                <div className="container__large">
-                    <Parallax2 />
-                </div>
-                <div className="bottom-half-body">
-                    <div className="container">
-                        <Ticker />
-                    </div>
-                    <div className="container__large">
-                        <SubmitModal
-                            showModal={this.state.showModal}
-                            closeModal={this.closeModal}
-                            modalTitle={this.state.modalTitle}
-                            modalMessage={this.state.modalMessage}
-                        />
-                        <Contact
-                            handleSubmit={this.handleSubmit}
-                        />
-                    </div>
-                </div>
+                <About />
+                <Services />
+                <Projects />
+                <Details />
+                <Testimonials />
+                <SubmitModal
+                    showModal={this.state.showModal}
+                    closeModal={this.closeModal}
+                    modalTitle={this.state.modalTitle}
+                    modalMessage={this.state.modalMessage}
+                />
+                <Contact
+                    currentStatus={this.state.currentStatus}
+                    handleSubmit={this.handleSubmit}
+                />
                 <Footer />
             </div>
         );

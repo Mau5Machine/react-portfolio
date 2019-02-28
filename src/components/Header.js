@@ -21,6 +21,10 @@ const Header = (props) => {
                             <i className="fab fa-instagram"></i>
                         </a>
 
+                        <a href="skype:live:cmartins629_1?userinfo" target="_blank">
+                        <i className="fab fa-skype"></i>
+                        </a>
+
                         <a href="https://github.com/Mau5Machine" target="_blank">
                             <i className="fab fa-github"></i>
                         </a>

@@ -1,152 +1,214 @@
-$(window).on("load", function () {
+$(function () {
+    "use strict";
     var windows = $(window);
-    $(".loading").fadeOut(500);
-});
+    windows.on('scroll', function () {
+        $(".progress-item span").each(function () {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_windows = $(windows).scrollTop() + $(windows).height();
+            var myVal = $(this).attr('data-value');
+            if (bottom_of_windows > bottom_of_object) {
+                $(this).css({
+                    width: myVal
+                });
+            }
+        });
+    });
 
-$(document).ready(function () {
+    /*
+    * -----------------------------------------------------------------
+    *----------------------------Parallax Effect-----------------------
+    * -----------------------------------------------------------------
+    */
     $(".cover-bg").each(function () {
         var a = $(this).attr("data-image-src");
         void 0 !== a && !1 !== a && $(this).css("background-image", "url(" + a + ")")
-    })
-    M.AutoInit();
-    $("#type").css("visibility", "hidden");
-    $("#type").t({
-        mistype: 10,
-        pause_on_click: !0
     });
-    $('#js-rotating').css('display', 'none');
-    setTimeout(function () {
-        $('#js-rotating').css('display', 'inline');
-        $('#js-rotating').Morphext({
-            animation: "flipInX",
-            seperator: ",",
-            speed: 3000
-        })
-    }, 2000);
 
-    /* Setup the skills icon loading animations here */
-    // css
-    var css = new ldBar('#css');
-    var css2 = document.querySelector('#css').ldBar;
-    // html
-    var html = new ldBar('#html');
-    var html2 = document.querySelector('#html').ldBar;
-    // js
-    var js = new ldBar('#js');
-    var js2 = document.querySelector('#js').ldBar;
-    // jquery
-    var jq = new ldBar('#jq');
-    var jq2 = document.querySelector('#jq').ldBar;
-    // node
-    var node = new ldBar('#node');
-    var node2 = document.querySelector('#node').ldBar;
-    // php
-    var php = new ldBar('#php');
-    var php2 = document.querySelector('#php').ldBar;
-    // react
-    var react = new ldBar('#react');
-    var react2 = document.querySelector('#react').ldBar;
-    // mysql
-    var mysql = new ldBar('#mysql');
-    var mysql2 = document.querySelector('#mysql').ldBar;
-    // sass
-    var sass = new ldBar('#sass');
-    var sass2 = document.querySelector('#sass').ldBar;
-    // wp
-    var wp = new ldBar('#wp');
-    var wp2 = document.querySelector('#wp').ldBar;
+    $.scrollIt({
+        upKey: 38,
+        downKey: 40,
+        easing: 'swing',
+        scrollTime: 600,
+        activeClass: 'active',
+        onPageChange: null,
+        topOffset: -170
+    });
 
+    /*
+    * -----------------------------------------------------------------
+    *-------------------------------Nav popup on scroll----------------
+    * -----------------------------------------------------------------
+    */
+    $(".navbar-nav a").on('click', function () {
+        $(".navbar-collapse").removeClass("show");
+    });
 
-    var languages = new Waypoint({
-        element: document.querySelector('#parallax1'),
-        handler: function (direction) {
-            setTimeout(function () {
-                css2.set(100);
-                js2.set(90);
-                html2.set(100);
-                jq2.set(100);
-                node2.set(70);
-                php2.set(80);
-                react2.set(75);
-                mysql2.set(80);
-                sass2.set(90);
-                wp2.set(80);
-            }, 1000);
+    windows.on("scroll", function () {
+        var bodyScroll = windows.scrollTop(),
+            navbar = $(".navbar");
+        if (bodyScroll > 100) {
+            navbar.addClass("nav-scroll");
+        } else {
+            navbar.removeClass("nav-scroll")
         }
     });
 
-    /* Initialize funny text */
-    $('#funnyText').funnyText({
-        speed: 700,
-        direction: 'both',
-        borderColor: 'white'
-    });
-    $('#funnyText2').funnyText({
-        speed: 700,
-        direction: 'both',
-        borderColor: 'white'
+    $(window).on("load", function () {
+        //     var windows = $(window);
+        $(".loading").fadeOut(500);
+        //     windows.stellar();
     });
 
-    /* Activate typing effect */
-    // $('#type').css('visibility', 'hidden');
-    var typingTrigger = new Waypoint({
-        element: document.querySelector('#typingTrigger'),
-        handler: function (direction) {
-            $('#type').t({
-                mistype: 10,
-                pause_on_click: !0
-            });
-        }
+    /*
+    * -----------------------------------------------------------------
+    *-------------------------Skill------------------------------------
+    * -----------------------------------------------------------------
+    */
+
+    var skill = $('.skills');
+    var width1 = $(".prog1").data("progress");
+    var progBar1 = $(".prog1");
+    skill.waypoint(function () {
+        progBar1.css({
+            "width": width1,
+            "transition": "2s ease-in"
+        });
+    }, {
+
+            offset: width1
+        });
+
+
+    var width2 = $(".prog2").data("progress");
+    var progBar2 = $(".prog2");
+    skill.waypoint(function () {
+        progBar2.css({
+            "width": width2,
+            "transition": "2s ease-in"
+        });
+    }, {
+
+            offset: width2
+        });
+
+
+    var width3 = $(".prog3").data("progress");
+    var progBar3 = $(".prog3");
+    skill.waypoint(function () {
+        progBar3.css({
+            "width": width3,
+            "transition": "2s ease-in"
+        });
+    }, {
+
+            offset: width3
+        });
+
+
+    /*
+    * -----------------------------------------------------------------
+    *-------------------------------Service Item-----------------------
+    * -----------------------------------------------------------------
+    */
+
+    var serviceItem = $("#service #owl-demo-service");
+
+    serviceItem.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        items: 3,
+        autoPlay: 6000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            // breakpoint from 480 up
+            500: {
+                items: 2
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        },
+        pauseOnHover: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"]
+    });
+    /*
+    * -----------------------------------------------------------------
+    *-------------------------button animation-------------------------
+    * -----------------------------------------------------------------
+    */
+
+    var serviceBtn = $(".service-btn");
+
+    serviceBtn.on("click", function () {
+        $('html, body').animate({
+            scrollTop: ($("#portfolio").offset().top) - 60
+        }, 2000);
+    });
+
+    /*
+    * -----------------------------------------------------------------
+    *------------------------Personal Details--------------------------
+    * -----------------------------------------------------------------
+    */
+    var personal = $('#personal-detail .nav .nav-item');
+    personal.on("click", function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        $(this).tab('show');
+    });
+
+    /*
+    * -----------------------------------------------------------------
+    *-------------------------------Mixit Up---------------------------
+    * -----------------------------------------------------------------
+    */
+    var portfolioContent = $('.portfolio-content');
+    portfolioContent.mixItUp();
+
+    /*
+    * -----------------------------------------------------------------
+    *--------------------Owl Carousel For Testimonial------------------
+    * -----------------------------------------------------------------
+    */
+    var testimonial = $("#client-testimonial #owl-demo-testimonial");
+
+    testimonial.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        items: 2,
+        autoPlay: 6000,
+        responsive: {
+            // breakpoint from 0 up
+            0: {
+                items: 1
+            },
+            // breakpoint from 480 up
+            600: {
+                items: 1
+            },
+            // breakpoint from 768 up
+            900: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        },
+        pauseOnHover: true,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"]
     });
 
 
-    /* Web ticker activation */
-    $('#image__ticker').liMarquee();
-
-    // Active the show on scroll effects here throughout the site
-    ScrollReveal().reveal('#agile', {
-        origin: 'right',
-        delay: 400,
-        distance: '50px',
-        duration: 400,
-        easing: 'ease-in',
-        reset: true
-    });
-
-    ScrollReveal().reveal('#forward', {
-        origin: 'left',
-        delay: 400,
-        distance: '50px',
-        duration: 400,
-        easing: 'ease-in',
-        reset: true
-    });
-
-    ScrollReveal().reveal('#knowledge', {
-        origin: 'right',
-        delay: 400,
-        distance: '50px',
-        duration: 400,
-        easing: 'ease-in',
-        reset: true
-    });
-
-    ScrollReveal().reveal('.service__icon', {
-        origin: 'top',
-        delay: 400,
-        distance: '50px',
-        duration: 400,
-        easing: 'ease-in',
-        reset: true
-    });
-
-    ScrollReveal().reveal('.skill__icon', {
-        origin: 'top',
-        delay: 400,
-        distance: '50px',
-        duration: 400,
-        easing: 'ease-in',
-        reset: true
-    });
 });
-

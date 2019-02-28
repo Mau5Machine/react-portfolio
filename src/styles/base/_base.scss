@@ -25,16 +25,23 @@ p {
 }
 
 a {
+    color: $color__theme-cyan;
+    font-weight: 600;
 
     &:hover,
     &:active,
     &:focus,
     &:visited {
         text-decoration: none;
+        color: $color__theme-violet2;
     }
 }
 
 h1 {
     font-family: $font__kanit;
     font-size: $xl-size;
+}
+
+.center-block {
+    margin: 0 auto;
 }
