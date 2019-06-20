@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
                                     </p>
                                     <p>
                                         <i className="fa fa-globe" aria-hidden="true"></i>
-                                        <a href="#">http://afkdeveloper.com</a>
+                                        <a href="#">https://afkdeveloper.com</a>
                                     </p>
                                     <div className="social-icons">
                                         <a href="https://www.facebook.com/christian.martins.906" target="_blank"><i className="fab fa-facebook-f"></i></a>

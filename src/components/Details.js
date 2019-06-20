@@ -25,7 +25,7 @@ const Details = () => {
                                 <div className="detail-content-area padding-style2">
                                     <div className="detail-header">
                                         <p className="title-small">SEE MY DETAILS</p>
-                                        <a href="https://cgmsites.com/docs/resume.pdf" target="_blank" class="btn btn-info" id="resume-link">Resume</a>
+                                        <a href="https://cgmsites.com/docs/resume.pdf" target="_blank" className="btn btn-info" id="resume-link">Resume</a>
                                     </div>
                                     <div className="detail-contents">
                                         <nav>

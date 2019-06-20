@@ -33,7 +33,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DESIGN</p>
-                                                        <a href="http://caraveladoral.com/testpages/caravela-final/" target="_blank">
+                                                        <a href="https://caraveladoral.com/testpages/caravela-final/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DESIGN</p>
-                                                        <a href="http://kabobigo.com" target="_blank">
+                                                        <a href="https://kabobigo.com" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -87,7 +87,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DEVELOPMENT</p>
-                                                        <a href="http://afkdeveloper.com/projects/capstone/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/capstone/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -114,7 +114,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DESIGN</p>
-                                                        <a href="http://afkdeveloper.com/projects/561media/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/561media/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -141,7 +141,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DEVELOPMENT</p>
-                                                        <a href="http://afkdeveloper.com/projects/tictactoe/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/tictactoe/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -168,7 +168,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DESIGN</p>
-                                                        <a href="http://afkdeveloper.com/projects/pbcs/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/pbcs/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -195,7 +195,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DEVELOPMENT</p>
-                                                        <a href="http://afkdeveloper.com/projects/dice/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/dice/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -222,7 +222,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DEVELOPMENT</p>
-                                                        <a href="http://afkdeveloper.com/projects/4inarow/" target="_blank">
+                                                        <a href="https://cgmsites.com/projects/Four_in_Row/" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>
@@ -249,7 +249,7 @@ const Projects = () => {
                                                 <div className="overlay-content">
                                                     <div className="overlay-content-item">
                                                         <p className="category">DESIGN</p>
-                                                        <a href="http://caraveladoral.com" target="_blank">
+                                                        <a href="https://caraveladoral.com" target="_blank">
                                                             <div className="magnify-icon">
                                                                 <p><span><i className="fa fa-link" aria-hidden="true"></i></span></p>
                                                             </div>

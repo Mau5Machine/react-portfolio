@@ -81,34 +81,21 @@
 }
 
 .about .about-text {
-    padding-right: 30px;
     font-family: $font__raleway;
     letter-spacing: .1rem;
+
+    @include media(tablet) {
+        padding-right: 30px;
+    }
 }
 
 .about .skills {
-    max-width: 90%;
-}
+    max-width: 100%;
+    text-align: center;
 
-.about .skills-content .progressbar-area h6 {
-    margin-bottom: 21px;
-    font-weight: 500;
-    color: #6e6e6e;
-    font-size: 15px;
-}
-
-.about .skills .progress-bar {
-    background-color: $color__theme-cyan;
-    position: relative;
-    overflow: visible;
-    box-sizing: border-box;
-    padding-top: 0;
-    padding-left: 10px;
-    text-align: left;
-    color: #fff;
-    box-shadow: none;
-    font-size: 10px;
-    line-height: 20px;
+    @include media(tablet) {
+        max-width: 90%;
+    }
 }
 
 .about .skill-category {
@@ -116,56 +103,19 @@
     margin: 0 auto;
 }
 
-.about .skills .progress {
-    overflow: visible;
-    height: 4px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border-radius: 0;
-    background: #d7d7d7;
-    box-shadow: none;
-    font-weight: 400;
-}
-
-.about .skills .progressbar-area h6 {
-    margin-bottom: 16px;
+.lang {
+    font-size: 30px;
     font-weight: 600;
-    font-size: 1.4rem;
-    color: #343a40;
-    font-family: $font__montserrat;
-    text-transform: uppercase;
 }
 
-.about .skills .progress-bar {
-    width: 0%;
+.skillIcons i {
+    font-size: 45px;
+
+    @include media(tablet) {
+        padding: 0 10px;
+    }
 }
 
-.about .skills .progress-bar span {
-    position: absolute;
-    top: -28px;
-    right: -6px;
-    display: inline-block;
-    min-width: 25px;
-    height: 22px;
-    padding: 0 8px;
-    text-align: center;
-    letter-spacing: 0;
-    color: #fff;
-    background-color: #333;
-    line-height: 21px;
-    width: 36px;
-}
-
-.about .skills .progress-bar>span::before {
-    position: absolute;
-    bottom: -4px;
-    left: 12px;
-    display: block;
-    width: 8px;
-    height: 8px;
-    content: "";
-    transform: rotate(45deg);
-    background-color: #333
+.skillIcons {
+    margin-top: 20px;
 }

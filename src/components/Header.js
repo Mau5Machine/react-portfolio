@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => {
     return (
-        <header id="home" className="header cover-bg" data-image-src="http://afkdeveloper.com/hosted-images/header_bg.jpg"
+        <header id="home" className="header cover-bg" data-image-src="https://afkdeveloper.com/images/header_bg.jpg"
         data-overlay='5' data-scroll-index='0'>
         <div className="container">
             <div className="row center-align">
